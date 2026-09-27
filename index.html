@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo de Manillas</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        header p {
+            color: #777;
+        }
+
+        /* Catálogo */
+        .catalogo {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Producto */
+        .producto {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+            transition: transform 0.2s;
+        }
+
+        .producto:hover {
+            transform: translateY(-4px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 280px;
+            object-fit: contain;
+            background-color: #fafafa;
+            display: block;
+        }
+
+        .informacion {
+            padding: 18px;
+        }
+
+        .informacion h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .informacion p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .precio {
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+            margin: 15px 0;
+        }
+
+        .whatsapp {
+            display: block;
+            text-align: center;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .whatsapp:hover {
+            background-color: #1ebe5d;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Ajustes para celulares */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 12px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+
+            .catalogo {
+                grid-template-columns: 1fr;
+            }
+
+            .producto img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>✨ Catálogo de Manillas</h1>
+    <p>Manillas elaboradas con materiales de alta calidad</p>
+</header>
+
+<main class="catalogo">
+
+    <!-- PRODUCTO 1 -->
+    <div class="producto">
+
+        <img src="1.jpg" alt="Manilla de plata ley 925 con esmeralda">
+
+        <div class="informacion">
+
+            <h2>Manilla de Plata 925</h2>
+
+            <p>
+                Esta manilla de plata ley 925 cuenta con un diseño elegante
+                que incluye seis balines, distribuidos equitativamente con
+                tres a cada lado de la pieza central.
+                El atractivo principal es una hermosa esmeralda.
+            </p>
+
+            <div class="precio">
+                $000.000
+            </div>
+
+            <!-- Cambia el número por tu WhatsApp -->
+            <a
+                class="whatsapp"
+                href="https://wa.me/573209205321?text=Hola,%20estoy%20interesado%20en%20la%20manilla%20de%20plata%20925"
+                target="_blank">
+                💬 Consultar por WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO 2 -->
+    <div class="producto">
+
+        <img src="fotos/2.jpg" alt="Manilla de plata">
+
+        <div class="informacion">
+
+            <h2>Manilla de Plata</h2>
+
+            <p>
+                Descripción de la segunda manilla.
+                Aquí puedes colocar sus materiales,
+                características y detalles.
+            </p>
+
+            <div class="precio">
+                $000.000
+            </div>
+
+            <a
+                class="whatsapp"
+                href="https://wa.me/573000000000?text=Hola,%20estoy%20interesado%20en%20esta%20manilla"
+                target="_blank">
+                💬 Consultar por WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO 3 -->
+    <div class="producto">
+
+        <img src="fotos/3.jpg" alt="Manilla">
+
+        <div class="informacion">
+
+            <h2>Manilla Especial</h2>
+
+            <p>
+                Descripción de este producto.
+                Puedes cambiar este texto por las características
+                de la manilla.
+            </p>
+
+            <div class="precio">
+                $000.000
+            </div>
+
+            <a
+                class="whatsapp"
+                href="https://wa.me/573000000000?text=Hola,%20estoy%20interesado%20en%20esta%20manilla"
+                target="_blank">
+                💬 Consultar por WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    © 2026 - Catálogo de Manillas
+</footer>
+
+</body>
+</html>
